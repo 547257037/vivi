@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="baba:war">
+    <output-path>$PROJECT_DIR$/vivi/target</output-path>
+    <root id="archive" name="baba-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="baba:war exploded" />
+    </root>
+  </artifact>
+</component>
