@@ -11,3 +11,14 @@ CREATE TABLE public.hero
     video_path VARCHAR(300)
 );
 CREATE UNIQUE INDEX hero_hero_name_uindex ON public.hero (hero_name);
+
+create or replace function upd_timestamp() returns trigger as
+$$
+begin
+  new.update_time = current_timestamp;
+  return new;
+end
+$$
+language plpgsql;
+
+create trigger update_time before update on hero for each row execute procedure upd_timestamp();
