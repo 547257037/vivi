@@ -1,0 +1,13 @@
+CREATE TABLE public.hero
+(
+    hero_name VARCHAR(300) NOT NULL,
+    hero_password BIGINT NOT NULL,
+    hero_type BIGINT DEFAULT 0 NOT NULL,
+    create_time TIMESTAMP DEFAULT now(),
+    hero_lv INTEGER DEFAULT 0 NOT NULL,
+    update_time TIMESTAMP DEFAULT now() NOT NULL,
+    hero_price NUMERIC DEFAULT 0 NOT NULL,
+    img_path VARCHAR(300),
+    video_path VARCHAR(300)
+);
+CREATE UNIQUE INDEX hero_hero_name_uindex ON public.hero (hero_name);

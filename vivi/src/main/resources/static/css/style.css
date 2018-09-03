@@ -1,39 +1,32 @@
-/*
 
-*/
-@import url(http://fonts.useso.com/css?family=Libre+Baskerville);
-/* ---------------------------------------------------------------------------- */
-/* ------------------------------------Reset----------------------------------- */
-/* ---------------------------------------------------------------------------- */
 a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,command,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tdvideo,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;border:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
 article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
 mark, rp, rt, ruby, summary, time {display:inline;}
 input, textarea {border:0; padding:0; margin:0; outline: 0;}
 iframe {border:0; margin:0; padding:0;}
 input, textarea, select {margin:0; padding:0px;}
-
+/*之前之后插入*/
 *,
 *:before,
 *:after {
+	/*可令浏览器呈现出带有指定宽度和高度的框,并把边框和内边距放入框中*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+.copyrights{/*段落缩进*/text-indent:-9999px;/*高度*/height:0;/*行高（指文字的高度）*/ line-height:0;/*设置字体的尺寸*/font-size:0;  /*超出宽度或高度的部分，就隐藏了。*/ overflow:hidden;}
 
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-/* ---------------------------------------------------------------------------- */
-html { -webkit-text-size-adjust: none;}
+/*当样式表里font-size<12px时，中文版chrome浏览器里字体显示仍为12px*/
+html { -webkit-text-size-adjust: none;}	
 .video embed,.video object,.video iframe { width: 100%;  height: auto;}
 img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
 
-a{color: #333;font-size: 15px;text-decoration: none;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;}
+a{color: #333;font-size: 15px;/*默认。定义标准的文本。underline	定义文本下的一条线。*/ text-decoration: none;/*规定完成过渡效果需要多少秒或毫秒。*/-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;}
 
 h1, h2 	{font-size: 25px;line-height: 25px;}
 h3, h4	{font-size: 20px;line-height: 20px;}
 h5, h6	{font-size: 16px;line-height: 16px;}
-
+/*上右下左*/
 p{margin: 20px 0 30px;}
 
 .t-center{text-align: center!important;}
@@ -291,7 +284,7 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
     -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25); /*定义 3D 转换，只是用 Z 轴的值。scale(x,y) 定义 2D 缩放转换。*/
+     transform:scale(1.25);
 }
 .zoom-container:hover .zoom-caption {
 	background: rgba(0, 0, 0, .5);
@@ -303,4 +296,3 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 .navigation{text-align: center;margin-top: 20px;}
 .navigation ul li{display: inline-block;}
 .navigation ul li a{background-color: #fff;border: 1px solid #ddd;padding: 7px 13px;}
-.top-img{widows: 100%; height:100%;}
