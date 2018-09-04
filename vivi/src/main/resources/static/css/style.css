@@ -19,7 +19,7 @@ input, textarea, select {margin:0; padding:0px;}
 /*当样式表里font-size<12px时，中文版chrome浏览器里字体显示仍为12px*/
 html { -webkit-text-size-adjust: none;}	
 .video embed,.video object,.video iframe { width: 100%;  height: auto;}
-img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
+img{max-width:100%;	height: auto;width: auto\9; max-height: 100%; /* ie8 */} 
 
 a{color: #333;font-size: 15px;/*默认。定义标准的文本。underline	定义文本下的一条线。*/ text-decoration: none;/*规定完成过渡效果需要多少秒或毫秒。*/-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;}
 
@@ -111,7 +111,7 @@ header .bottom a{color: #fff;text-decoration: underline;}
 .post {}
 .post:last-child {margin-bottom: 0;}
 .post:after, .post:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
-.post img{float: left; max-width: 140px;display: inline-block;}
+.post img{float: left; max-width: 250px;display: inline-block;}
 .post .zoom-container .zoom-caption i.icon-play{font-size: 13px; max-width: 500px;margin: 18% auto 0;}
 .post .wrapper {display: inline-block;text-align: left;}
 .post .wrapper span{display: block;margin: 5px 0;}
@@ -211,7 +211,7 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 #owl-demo-3 .item .vid-item  i.icon-play
 {position: absolute; top: 40px;text-align: center;width: 43px;margin: 0 auto;left:0;font-size: 15px;}
 #owl-demo-1 .item, #owl-demo-2 .item, #owl-demo-3 .item{margin: 3px;}
-#owl-demo-1 .item img, #owl-demo-2 .item img, #owl-demo-3 .item img{width: 100%;height: auto;}
+#owl-demo-1 .item img, #owl-demo-2 .item img, #owl-demo-3 .item img{width: 100%;height: 200px;}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------Vid-Effect----------------------------------- */
@@ -241,8 +241,8 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 }
 .zoom-container img {
 	display: block;
-	width: 100%;
-	height: auto;
+	width: 250px;
+	height: 150px;
 	-webkit-transition: all .5s ease; /* Safari and Chrome */
     -moz-transition: all .5s ease; /* Firefox */
     -ms-transition: all .5s ease; /* IE 9 */
