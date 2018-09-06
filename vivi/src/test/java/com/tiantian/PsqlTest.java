@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 
+
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -21,7 +22,7 @@ public class PsqlTest {
 
     @Test
     public void gggg() throws Exception {
-        List list  =psql.query("slect * from hero ", new BeanPropertyRowMapper( DictionariesHero.class));
+        List list  =psql.query("select * from hero ", new BeanPropertyRowMapper( DictionariesHero.class));
             System.out.println(list);
 
     }
