@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/vivi/baba.iml" filepath="$PROJECT_DIR$/vivi/baba.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/vivi44.iml" filepath="$PROJECT_DIR$/.idea/vivi44.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vivi44.iml" filepath="$PROJECT_DIR$/vivi44.iml" />
     </modules>
   </component>
 </project>
