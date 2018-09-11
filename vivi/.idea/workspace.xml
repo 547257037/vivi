@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="vivi44:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b73a715f-0dbd-425a-8252-26205f57bab1" name="Default Changelist" comment="2018-09-11">
+      <change afterPath="$PROJECT_DIR$/../vivi44.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/analysis/save.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/static/js/analysis/save.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/vivi44_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/vivi44_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_collections_google_collections_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_log4jdbc_log4jdbc_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/baba.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/BabaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesController/DictionariesController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesDao/IDictionariesHeroDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesDao/impl/DictionariesHeroDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesEntity/DictionariesHero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesService/IDictionariesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesService/impl/DictionariesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesVO/ImgResultDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/DayAndTimeRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/DayRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/ExcelUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/Jdbc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/Mapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/NameValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/NameValueEnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/PageInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/ResponseResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/StarvConst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/common/TimeRange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/converter/DayRangeConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/converter/TimeRangeConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/datasource/HikariDataSourceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/datasource/PSqlDataSourceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/config/exception/StarvException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/DayInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/FlatForm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/LiveIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/LookBackIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/Operator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/SubscribeIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/SystemMenuStatusEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/TimeInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/enums/VodIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/mapper/psql/IDictionariesHeroDaoMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/BigDecimalUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/ImagsObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/ImagsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/JacksonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/MD5Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/RangeUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/SessionUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/SqlUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/StarvDateUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tiantian/utils/StringTransformUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/databases.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/psql/IDictionariesHeroDaoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap_3.3.7_css_bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/icomoon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/save-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/save.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themify-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/zerogrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_bg_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_bg_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/img_bg_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/macbook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/person_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/person_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/person_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/analysis/save.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/classie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/Fetch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/bootstrap-3.0.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/bootstrap-multiselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/bootstrap-table-export.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/bootstrap-table-zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/bootstrap-table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/collect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/echarts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jQuery.Hz2Py-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.countTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.easing.1.3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.magnific-popup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.stellar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.ztree.core-3.5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/jquery.ztree.excheck-3.5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/lodash.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/magnific-popup-options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/menuTree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/modernizr-2.6.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/respond.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/shandong.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/tableExport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/vue-resource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/vuex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/common/wangEditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-2.1.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/save.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/BabaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/PsqlTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/psqlTest/IDictChannelServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/psqlTest/ResultMediaPlatform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/psqlTest/Streams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/psqlTest/aBC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tiantian/psqlTest/test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vivi44.iml" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="871177949">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="css" value="3" />
+          <entry key="java" value="12" />
+          <entry key="js" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="CSS" value="3" />
+          <entry key="JAVA" value="12" />
+          <entry key="JavaScript" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="66" />
+          <entry key="txt" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="66" />
+          <entry key="PLAIN_TEXT" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.checkout.local" value="1" />
+          <entry key="git.branch.checkout.revision" value="1" />
+          <entry key="git.branch.compare" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="994" column="24" selection-start-line="994" selection-start-column="24" selection-end-line="994" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE-sources.jar!/org/springframework/jdbc/core/BatchUpdateUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4408">
+              <caret line="298" column="17" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>batchUpdate</find>
+      <find>end</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="f5b26a3b742a5ef0e25fa12abf9e49ddc89d052f" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/com/tiantian/PsqlTest.java" />
+        <option value="$PROJECT_DIR$/src/main/com/tiantian/config/datasource/HikariDataSourceFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/com/tiantian/common/ExcelUtil.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="y" value="6" />
+    <option name="width" value="1940" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vivi44" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vivi44" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vivi" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536650983534" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tiantian.config.datasource" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\vivi44\vivi\src\main\resources\static\css" />
+      <recent name="E:\vivi44\vivi\src\main\resources\static\images" />
+      <recent name="E:\vivi44\vivi\src\main\resources\static\js\common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ExcelUtil">
+    <configuration name="ExcelUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tiantian.common.ExcelUtil" />
+      <module name="vivi44" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tiantian.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PsqlTest.gggg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vivi44" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tiantian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tiantian" />
+      <option name="MAIN_CLASS_NAME" value="com.tiantian.PsqlTest" />
+      <option name="METHOD_NAME" value="gggg" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.31" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="vivi44:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/baba" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_vivi44_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52664" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="vivi44:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="JUnit.PsqlTest.gggg" />
+      <item itemvalue="Application.ExcelUtil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ExcelUtil" />
+        <item itemvalue="JUnit.PsqlTest.gggg" />
+        <item itemvalue="JUnit.PsqlTest.gggg" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b73a715f-0dbd-425a-8252-26205f57bab1" name="Default Changelist" comment="" />
+      <created>1536222048098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536222048098</updated>
+      <workItem from="1536222052749" duration="3671000" />
+      <workItem from="1536285828757" duration="1847000" />
+      <workItem from="1536544940173" duration="10152000" />
+      <workItem from="1536631679177" duration="6040000" />
+    </task>
+    <task id="LOCAL-00001" summary="2018-09-06">
+      <created>1536224452508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536224452508</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2018-09-10">
+      <created>1536577311487</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536577311487</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2018-09-10">
+      <created>1536577393738</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536577393738</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2018-09-10">
+      <created>1536577424054</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536577424054</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2018-09-10">
+      <created>1536577650309</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536577650309</updated>
+    </task>
+    <task id="LOCAL-00006" summary="2018-09-10">
+      <created>1536578259166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536578259166</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2018-09-11">
+      <created>1536648308123</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536648308124</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="PsqlTest_gggg - 2018.09.06 at 16h 58m 08s.xml">
+      <configuration name="PsqlTest.gggg" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21710000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-10" y="6" width="1940" height="1040" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2526596" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29249448" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.329718" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3101064" side_tool="true" weight="0.26269317" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.5242826" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="14" sideWeight="0.6898936" weight="0.26269317" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.24414894" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2018-09-06" />
+    <MESSAGE value="2018-09-10" />
+    <MESSAGE value="2018-09-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-09-11" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tiantian/PsqlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/tiantian/config/datasource/HikariDataSourceFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/wangEditor.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/jquery.easing.1.3.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/jquery.waypoints.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/bootstrap_3.3.7_css_bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common/jquery.stellar.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/save-style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/save.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE-sources.jar!/org/springframework/jdbc/core/BatchUpdateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4408">
+          <caret line="298" column="17" selection-start-line="298" selection-start-column="17" selection-end-line="298" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15.jar!/org/apache/poi/ss/usermodel/CellType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15-sources.jar!/org/apache/poi/ss/usermodel/CellType.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.15/poi-3.15-sources.jar!/org/apache/poi/ss/usermodel/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/tiantian/common/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="159" column="63" lean-forward="true" selection-start-line="159" selection-start-column="63" selection-end-line="159" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/tiantian/api/dictionaries/dictionariesController/DictionariesController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/analysis/save.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.4.RELEASE/spring-jdbc-5.0.4.RELEASE-sources.jar!/org/springframework/jdbc/core/JdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="994" column="24" selection-start-line="994" selection-start-column="24" selection-end-line="994" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>vivi44:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>vivi44</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
