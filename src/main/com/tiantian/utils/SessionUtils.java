@@ -1,6 +1,6 @@
 package com.tiantian.utils;
 
-import com.tiantian.api.dictionaries.dictionariesEntity.DictionariesHero;
+import com.tiantian.api.dictionaries.dictionariesEntity.Hero;
 import com.tiantian.common.StarvConst;
 import com.tiantian.config.exception.StarvException;
 import org.springframework.web.context.request.RequestAttributes;
@@ -30,8 +30,8 @@ public class SessionUtils {
         return getSession().getAttribute(attr);
     }
 
-    public static DictionariesHero getSystemUser() {
-        DictionariesHero user = (DictionariesHero) getSessionAttr(StarvConst.SESSION_SYSUSER);
+    public static Hero getSystemUser() {
+        Hero user = (Hero) getSessionAttr(StarvConst.SESSION_SYSUSER);
         if (user == null) {
             throw new StarvException("没有登录", StarvConst.NO_LOGIN_ERROR_CODE);
         }

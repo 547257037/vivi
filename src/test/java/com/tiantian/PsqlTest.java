@@ -1,6 +1,6 @@
 package com.tiantian;
 
-import com.tiantian.api.dictionaries.dictionariesEntity.DictionariesHero;
+import com.tiantian.api.dictionaries.dictionariesEntity.Hero;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class PsqlTest {
 
     @Test
     public void gggg() throws Exception {
-        List list  =psql.query("select * from hero ", new BeanPropertyRowMapper( DictionariesHero.class));
+        List list  =psql.query("select * from hero ", new BeanPropertyRowMapper( Hero.class));
             System.out.println(list);
 
     }

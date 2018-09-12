@@ -95,8 +95,8 @@
     <schema id="20" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-09-12.09:34:15.294</IntrospectionTimestamp>
-      <IntrospectionStateNumber>8981</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-09-13.08:31:34.228</IntrospectionTimestamp>
+      <IntrospectionStateNumber>15613</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -144,7 +144,7 @@
     </access-method>
     <table id="27" parent="20" name="hero">
       <ObjectId>26722</ObjectId>
-      <StateNumber>8975</StateNumber>
+      <StateNumber>15613</StateNumber>
     </table>
     <routine id="28" parent="20" name="upd_timestamp">
       <ObjectId>26734</ObjectId>
@@ -164,18 +164,18 @@
     </column>
     <column id="30" parent="27" name="hero_password">
       <Position>2</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>varchar(300)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>8972</StateNumber>
-      <TypeId>20</TypeId>
+      <StateNumber>15603</StateNumber>
+      <TypeId>1043</TypeId>
     </column>
     <column id="31" parent="27" name="hero_type">
       <Position>3</Position>
-      <DataType>bigint|0s</DataType>
+      <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>8972</StateNumber>
+      <StateNumber>15612</StateNumber>
       <DefaultExpression>0</DefaultExpression>
-      <TypeId>20</TypeId>
+      <TypeId>23</TypeId>
     </column>
     <column id="32" parent="27" name="create_time">
       <Position>4</Position>
@@ -188,7 +188,7 @@
       <Position>5</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>8972</StateNumber>
+      <StateNumber>15613</StateNumber>
       <DefaultExpression>0</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
@@ -220,12 +220,18 @@
       <StateNumber>8972</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="38" parent="27" name="hero_hero_name_uindex">
+    <column id="38" parent="27" name="describe">
+      <Position>10</Position>
+      <DataType>varchar(300)|0s</DataType>
+      <StateNumber>15585</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="39" parent="27" name="hero_hero_name_uindex">
       <ObjectId>26733</ObjectId>
       <ColNames>hero_name</ColNames>
       <Unique>1</Unique>
     </index>
-    <trigger id="39" parent="27" name="update_time">
+    <trigger id="40" parent="27" name="update_time">
       <ObjectId>26735</ObjectId>
       <StateNumber>8975</StateNumber>
       <Turn>before-row</Turn>
@@ -233,7 +239,7 @@
       <FireMode>origin</FireMode>
       <CallRoutineId>26734</CallRoutineId>
     </trigger>
-    <argument id="40" parent="28">
+    <argument id="41" parent="28">
       <ArgumentDirection>R</ArgumentDirection>
       <DataType>trigger|0s</DataType>
     </argument>
