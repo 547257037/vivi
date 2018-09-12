@@ -2,16 +2,9 @@
 
 $("#test").click(function(){
 
-    swal({ 
-        title: "Error!", 
-        text: "Here's my error message!",
-        type: "error", 
-        confirmButtonText: "Cool" 
-      });
 })
 $("#test1").click(function(){
-  
-    swal("OMG!", "123", "error");
+
 })
 
 $("#btnImportOK").click(function () {
