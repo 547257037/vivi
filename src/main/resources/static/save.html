@@ -53,21 +53,19 @@
 			
 		</div>
 	</nav>
-
+	
 	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/img_4.jpg)">
 		<div class="overlay"></div>
 		<div class="gtco-container">
-			<div class="row">
+			<div class="row" id="tabel" >
 				<div class="col-md-12 col-md-offset-0 text-left">
-					
+				
 
 					<div class="row row-mt-15em">
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
 							<span class="intro-text-small">Welcome to </span>   
-							<h1>my hero ，I need you ！</h1>
-							<div class="alert">
-
-							</div>
+							<h1>My Hero ，I need you ！</h1>
+						
 						</div>
 						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
 												
@@ -78,6 +76,10 @@
 										<li class="active gtco-first"><a href="#" data-tab="signup">注册</a></li>
 										<li class="gtco-second"><a href="#" data-tab="login">登录</a></li>
 									</ul>
+									<div class="alert" >
+									
+                                              <h1 >{{ResponseResult.errorMessage}}</h1>
+									</div>
 									<div class="tab-content">
 										<div class="tab-content-inner active" data-content="signup">
 											<form action="#" id="save-hero-form">
@@ -103,7 +105,14 @@
 												<div class="row form-group">
 													<div class="col-md-12">
 														<label for="heroType">英雄类型</label>
-														<input type="text" class="form-control" id="heroType" name="heroType">
+														<select id="city" name="heroType" class="select">
+															<option  value="0">战斗型</option>
+															<option  value="1">艺术型</option>
+															<option value="2">二次元</option>
+															<option  value="3">知识型</option>
+															<option  value="4">其他</option>
+															
+														</select>
 													</div>
 												</div>
 												<div class="row form-group">
@@ -115,13 +124,13 @@
                                                 <div class="form-group">
                                                         <div class="col-md-12">
                                                         <label for="inputfile-image">图片</label>
-                                                        <input type="file" id="inputfile" multiple="multiple" name="imageFiles">
+                                                        <input type="file" class="inputfile" multiple="multiple" name="imageFiles">
                                                         </div>
                                                 </div>
                                                 <div class="form-group">
                                                         <div class="col-md-12">
                                                         <label for="inputfile">视频</label>
-                                                        <input type="file" id="inputfile-video" multiple="multiple" name="videoFiles">
+                                                        <input type="file" class="inputfile" multiple="multiple" name="videoFiles">
                                                         </div>
                                                 </div>
                                                 <div class="form-group">

@@ -44,7 +44,10 @@ section:after, section:before{clear: both; content: '\0020'; display: block; vis
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 html, body {width:100%; padding:0; margin:0;}
-body {color: #3F3F3F;font-family: 'Libre Baskerville', serif;background: #F0F0F0;}
+body {color: #3F3F3F;font-family: 'Libre Baskerville', serif;background: -webkit-linear-gradient(rgb(14, 13, 13) , rgb(68, 18, 18));  /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(rgb(14, 13, 13) , rgb(68, 18, 18));  /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(rgb(14, 13, 13) , rgb(68, 18, 18));  /* Firefox 3.6 - 15 */
+	background: linear-gradient(rgb(14, 13, 13) , rgb(68, 18, 18)); /* 标准的语法 */}
 body .wrap-body{}
 
 /* --Line-- */
@@ -82,7 +85,9 @@ header .bottom a{color: #fff;text-decoration: underline;}
 /* -------------------------------------Container------------------------------ */
 /* ---------------------------------------------------------------------------- */
 #container {}
-#container.index-page{}
+#container.index-page{
+	background-color:#333;
+}
 #container .wrap-container{}
 
 #container .most-viewed{}
@@ -92,8 +97,11 @@ header .bottom a{color: #fff;text-decoration: underline;}
 #main-content{margin-top: 10px;}
 #main-content .wrap-content{}
 
-.header {background-color: #fff;padding: 15px 20px;margin-bottom: 15px;border: 1px solid #ddd;}
-.header h2{font-size: 23px;}
+.header {  background: -webkit-linear-gradient(left top, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* 标准的语法 */;margin-bottom: 15px;border: 1px solid rgb(14, 13, 13);}
+.header h2{font-size: 21px; color:rgb(116, 7, 7)}
 
 
 /* ---Sidebar-Widget--- */
@@ -104,9 +112,12 @@ header .bottom a{color: #fff;text-decoration: underline;}
 .widget ul li { line-height: 2.8;border-bottom: 2px solid #DDD;}
 .widget:after, .widget:before{clear: both; content: '\0020'; display: block; visibility: hidden; width: 0; height: 0;}
 
-.widget .wid-header  {background-color: #fff;padding: 20px;margin-bottom: 15px;border: 1px solid #ddd;}
+.widget .wid-header  { background: -webkit-linear-gradient(left top, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* Firefox 3.6 - 15 */
+	background: linear-gradient(to bottom right, rgb(14, 13, 13) , rgb(68, 18, 18)); /* 标准的语法 */;padding: 20px;margin-bottom: 15px;border: 1px solid rgb(70, 7, 7);}
 .widget .wid-header h5 {font-size: 23px;}
-.widget .wid-content{padding: 20px;background-color: #fff;border: 1px solid #ddd;}
+.widget .wid-content{padding: 20px;background-color: #3f3f3f;border: 1px solid #3f3f3f;}
 
 .post {}
 .post:last-child {margin-bottom: 0;}
@@ -204,7 +215,7 @@ textarea {display:block;width:90%;height:200px; border-radius:4px;-webkit-border
 /* ---------------------------------------------------------------------------- */
 /* ---------------------------------Owl-Slider--------------------------------- */
 /* ---------------------------------------------------------------------------- */
-#owl-demo-1, #owl-demo-2, #owl-demo-3{margin-bottom: 50px;background: #fff;padding: 20px;border: 1px solid #ddd;}
+#owl-demo-1, #owl-demo-2, #owl-demo-3{margin-bottom: 50px;background: rgb(12, 12, 12);padding: 20px;border: 1px solid rgb(10, 10, 10);}
 #owl-demo-1 .item .vid-item {}
 #owl-demo-1 .item .vid-item  i.icon-play,
 #owl-demo-2 .item .vid-item  i.icon-play,

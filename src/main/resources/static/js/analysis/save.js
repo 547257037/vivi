@@ -1,11 +1,6 @@
 /*提交表单*/
 
-$("#test").click(function(){
-
-})
-$("#test1").click(function(){
-
-})
+$(".alert").hide()
 
 $("#btnImportOK").click(function () {
 
@@ -17,12 +12,15 @@ $("#btnImportOK").click(function () {
         contentType : false,
         processData: false,
         async: false
-    }).success(function (data) {
-        if(data.success){
-            swal("Good!", data, "success");
-            $(window).attr('location','http://localhost:8080/tiantian/index.html');
-        }else{
-            swal("OMG!", data, "error");
-        }
+    }).success(function (result) {        
+            var v=new Vue({
+                el : '#tabel',
+                data : {
+                    ResponseResult : result 
+                }
+            });
+            $(".alert").show();       
+            setTimeout(function(){$(".alert").hide()}, 3000);      
     })
 });
+

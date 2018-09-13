@@ -16,7 +16,7 @@
 
 </head>
 <body id="wrapper" >
-<div class="wrap-body">
+<div  class="wrap-body">
 	
 	<header>
 		<div class="wrap-header">
@@ -71,15 +71,16 @@
 						<div class="row">
 						<div class="most-viewed">
 							<div class="col-2-4">
-								<div class="wrap-col">
+								<div id="most"  class="wrap-col" v-for="site in ResponseResult">
 									<div class="zoom-container">
 										<a href="single.html">
 											<span class="zoom-caption">
 												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>
+											</span>											
 											<img style="width: 560px ; height: 310px;" class="top-img" src="images/4.jpg" />
 										</a>
 									</div>
+									<h1 ></h1>
 								</div>
 							</div>
 						</div>
@@ -811,4 +812,8 @@
     });
     </script>
 </div>
+<script src="js/common/jquery.min.js"></script>
+<script src="js/common/vue.js"></script>
+<script src="js/common/axios.min.js"></script>
+<script src="js/analysis/index.js" > </script>
 </body></html>

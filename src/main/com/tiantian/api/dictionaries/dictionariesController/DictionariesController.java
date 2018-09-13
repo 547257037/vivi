@@ -32,14 +32,14 @@ public class DictionariesController {
     public ResponseResult sveDictionariesHero(Hero hero) throws IOException {
            try {
                if (dictionariesService.findHeroByUsername(hero)) {
-                   return ResponseResult.putError("添加失败，用户名重复");
+                   return ResponseResult.putSuccessMessage("     后台报错了，大兄嘚！");
                }
 
            }catch ( Exception e){
                throw new StarvException(e.getMessage());
            }
         dictionariesService.sveDictionariesHero(hero);
-        return ResponseResult.putSuccessMessage("添加成功");
+        return ResponseResult.putSuccessMessage("    恭喜你！My Hero！");
         }
 
     }

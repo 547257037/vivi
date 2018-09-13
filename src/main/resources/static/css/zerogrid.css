@@ -13,7 +13,7 @@ Author URI: http://www.zerotheme.com/
 .zerogrid .f-right{float: right!important;}
 .zerogrid .f-left{float: left!important;}
 
-.zerogrid .row{}
+.zerogrid .row{ }
 .zerogrid .row:before,.row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
 .zerogrid .row:after{clear: both; }
 .zerogrid .row{zoom: 1;}
