@@ -12,7 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 
+import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.mapping;
+import static java.util.stream.Collectors.toList;
 
 
 @RestController
@@ -23,8 +29,9 @@ public class DictionariesController {
    private IDictionariesService dictionariesService;
     @GetMapping("getDictionariesHeroList")
     public ResponseResult getAllDictionariesHeroList(){
-
-        return ResponseResult.putSuccessData(dictionariesService.getAllDictionariesHeroList());
+        Map<Integer, List<Hero>> collect = dictionariesService.getAllDictionariesHeroList().stream().collect(groupingBy(x -> x.getHeroType(), mapping(x -> x, toList())));
+        collect.values().stream().forEach(x->x.stream().sorted(Comparator.comparing(Hero::getHeroLv).reversed()));
+        return ResponseResult.putSuccessData(collect);
     }
 
     @ResponseBody

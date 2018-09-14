@@ -1,28 +1,54 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
 	<meta charset="utf-8">
-	<title>My hero</title>
+	<title>My Hero</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates | zerotheme.com">
+	<meta name="author" content="www.zerotheme.com">
 	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-  
+    <!-- CSS
+  ================================================== -->
   	<link rel="stylesheet" href="css/zerogrid.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/menu.css">
-	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Owl Carousel Assets -->
 	<link href="css/owl.carousel.css" rel="stylesheet">
-	<link href="css/owl.theme.css" rel="stylesheet"> 
-
- 
-
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+		<script src="js/html5.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+	<![endif]-->
+    
 </head>
 <body id="wrapper" >
-<div  class="wrap-body">
+<div class="wrap-body">
 	
+	<!--////////////////////////////////////Header-->
 	<header>
 		<div class="wrap-header">
 			<div class="zerogrid">
 				<div class="row">
-					<!--<a href="index.html" class="logo"><img src="images/logo.png" /></a>-->
+					<a href="index.html" class="logo"><img src="images/logo.png" /></a>
 					<ul class="quick-link">
 						<li><a href="#" title="Upload Video"><i class="fa fa-upload"></i></a></li>
 						<li><a href="#" title="Log in"><i class="fa fa-user"></i></a></li>
@@ -41,246 +67,114 @@
 		<div class="bottom">
 			<div class="zerogrid">
 				<div class="row">
-					<span>欢迎来到My hero <a href="contact.html"></a></span>
+					<span>Welcome to Us - Contact Us at <a href="contact.html">HERE</a></span>
 				</div>
 			</div>
 		</div>
     </header>
     <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
-
+	<!--////////////////////////////////////Menu-->
 	<a href="#" class="nav-toggle">Toggle Navigation</a>
     <nav class="cmn-tile-nav">
 		<ul class="clearfix">
-			<li class="colour-1"><a href="gallery.html">排行</a></li>
-			<li class="colour-2"><a href="gallery.html">战斗型</a></li>
-			<li class="colour-3"><a href="gallery.html">艺术型</a></li>
-			<li class="colour-4"><a href="gallery.html">电视</a></li>
-			<li class="colour-5"><a href="gallery.html">二次元</a></li>
-			<li class="colour-6"><a href="gallery.html">知识型</a></li>
-			<li class="colour-7"><a href="gallery.html">电影</a></li>
-			<li class="colour-8"><a href="gallery.html">其他</a></li>
+			<li class="colour-1"><a href="gallery.html">Top News</a></li>
+			<li class="colour-2"><a href="gallery.html">Sport</a></li>
+			<li class="colour-3"><a href="gallery.html">Music</a></li>
+			<li class="colour-4"><a href="gallery.html">TV Show</a></li>
+			<li class="colour-5"><a href="gallery.html">Cartoons</a></li>
+			<li class="colour-6"><a href="gallery.html">Tech</a></li>
+			<li class="colour-7"><a href="gallery.html">iOS</a></li>
+			<li class="colour-8"><a href="gallery.html">More</a></li>
 		</ul>
     </nav>
-
+	<!--////////////////////////////////////Container-->
 	<section id="container" class="index-page">
 		<div class="wrap-container zerogrid">
-				<div class="row">
-						<div class="header">
-							<h2>最多播放</h2>
-						</div>
-						<div class="row">
-						<div class="most-viewed">
-							<div class="col-2-4">
-								<div id="most"  class="wrap-col" v-for="site in ResponseResult">
-									<div class="zoom-container">
-										<a href="single.html">
-											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>											
-											<img style="width: 560px ; height: 310px;" class="top-img" src="images/4.jpg" />
-										</a>
-									</div>
-									<h1 ></h1>
-								</div>
+			
+			<div class="row">
+				<div class="header">
+					<h2>Most Viewed Videos</h2>
+				</div>
+				<div class="row" id="most">
+				<div class="most-viewed">
+					<div class="col-2-4">
+						<div class="wrap-col" >
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+                                                <!-- <!--<i class="icon-play fa fa-play"></i>-->-->
+                                            </span>                                         
+                                            <img :src="ResponseResult.data.ti[0].imgPath" style="width: 560px ; height: 310px;" class="top-img" />										
+								</a>
 							</div>
-						</div>
-						<div class="extra">
-							<div class="col-1-4">
-								<div class="wrap-col">
-									<div class="zoom-container">
-										<a href="single.html">
-											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>
-											<img src="images/1.jpg" />
-										</a>
-									</div>
-									<div class="zoom-container">
-										<a href="single.html">
-											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>
-											<img src="images/2.jpg" />
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-1-4">
-								<div class="wrap-col">
-									<div class="zoom-container">
-										<a href="single.html">
-											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>
-											<img src="images/5.jpg" />
-										</a>
-									</div>
-									<div class="zoom-container">
-										<a href="single.html">
-											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
-											</span>
-											<img src="images/23.jpg" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
+							
+									<h1> 英雄名称 {{ResponseResult.data.type[0].heroName}}</h1>	
+									<h1> 英雄等级{{ResponseResult.data.type[0].heroLv}}</h1>
+								
+							     
 						</div>
 					</div>
-					<div class="row">
-						<div id="main-content" class="col-2-3">
-							<div class="wrap-content">
-								<section class="vid-艺术型">
-									<div class="header">
-										<h2>艺术型</h2>
-									</div>
-									<div class="row">
-										<div id="owl-demo-1" class="owl-carousel">
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/1.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/2.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/3.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/4.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/5.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/23.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/3.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-											<div class="item wrap-vid">
-												<div class="zoom-container">
-													<a href="single.html">
-														<span class="zoom-caption">
-															<!--<i class="icon-play fa fa-play"></i>-->
-														</span>
-														<img src="images/5.jpg" />
-													</a>
-												</div>
-												<h3 class="vid-name"><a href="#">Video's Name</a></h3>
-												<div class="info">
-													<h5>By <a href="#">Kelvin</a></h5>
-													<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-													<span><i class="fa fa-heart"></i>1,200</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</section>
-								
-								<section class="vid-战斗型">
-									<div class="header">
-										<h2>战斗型</h2>
-									</div>
-									<div class="row">
-
-								<div id="owl-demo-2" class="owl-carousel">
+				</div>
+				<div class="extra">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/1.jpg" />
+								</a>
+							</div>
+							<h1> 英雄名称 {{ResponseResult.data.type[1].heroName}}</h1>	
+									<h1> 英雄等级{{ResponseResult.data.type[1].heroLv}}</h1>
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/2.jpg" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/5.jpg" />
+								</a>
+							</div>
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/14.jpg" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="main-content" class="col-2-3">
+					<div class="wrap-content">
+						<section class="vid-tv">
+							<div class="header">
+								<h2>TV</h2>
+							</div>
+							<div class="row">
+								<div id="owl-demo-1" class="owl-carousel">
 									<div class="item wrap-vid">
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/1.jpg" />
 											</a>
@@ -296,7 +190,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/2.jpg" />
 											</a>
@@ -312,7 +206,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/3.jpg" />
 											</a>
@@ -328,7 +222,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/4.jpg" />
 											</a>
@@ -344,7 +238,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/5.jpg" />
 											</a>
@@ -360,9 +254,9 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
-												<img src="images/23.jpg" />
+												<img src="images/14.jpg" />
 											</a>
 										</div>
 										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
@@ -376,7 +270,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/3.jpg" />
 											</a>
@@ -392,7 +286,145 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/5.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<section class="vid-sport">
+							<div class="header">
+								<h2>Sport</h2>
+							</div>
+							<div class="row"><!--Start Box-->
+								<div id="owl-demo-2" class="owl-carousel">
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/1.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/2.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/3.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/4.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/5.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/14.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
+												</span>
+												<img src="images/3.jpg" />
+											</a>
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="item wrap-vid">
+										<div class="zoom-container">
+											<a href="single.html">
+												<span class="zoom-caption">
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/5.jpg" />
 											</a>
@@ -418,7 +450,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/1.jpg" />
 											</a>
@@ -434,7 +466,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/2.jpg" />
 											</a>
@@ -450,7 +482,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/3.jpg" />
 											</a>
@@ -466,7 +498,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/4.jpg" />
 											</a>
@@ -482,7 +514,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/5.jpg" />
 											</a>
@@ -498,9 +530,9 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
-												<img src="images/23.jpg" />
+												<img src="images/14.jpg" />
 											</a>
 										</div>
 										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
@@ -514,7 +546,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/3.jpg" />
 											</a>
@@ -530,7 +562,7 @@
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
-													<!--<i class="icon-play fa fa-play"></i>-->
+													 <!--<i class="icon-play fa fa-play"></i>-->
 												</span>
 												<img src="images/5.jpg" />
 											</a>
@@ -560,14 +592,14 @@
 					<!---- Start Widget ---->
 					<div class="widget wid-post">
 						<div class="wid-header">
-							<h5>最新</h5>
+							<h5>Latest Posts</h5>
 						</div>
 						<div class="wid-content">
 							<div class="post wrap-vid">
 								<div class="zoom-container">
 									<a href="single.html">
 										<span class="zoom-caption">
-											<!--<i class="icon-play fa fa-play"></i>-->
+											 <!--<i class="icon-play fa fa-play"></i>-->
 										</span>
 										<img src="images/4.jpg" />
 									</a>
@@ -585,9 +617,9 @@
 								<div class="zoom-container">
 									<a href="single.html">
 										<span class="zoom-caption">
-											<!--<i class="icon-play fa fa-play"></i>-->
+											 <!--<i class="icon-play fa fa-play"></i>-->
 										</span>
-										<img src="images/23.jpg" />
+										<img src="images/14.jpg" />
 									</a>
 								</div>
 								<div class="wrapper">
@@ -603,7 +635,7 @@
 								<div class="zoom-container">
 									<a href="single.html">
 										<span class="zoom-caption">
-											<!--<i class="icon-play fa fa-play"></i>-->
+											 <!--<i class="icon-play fa fa-play"></i>-->
 										</span>
 										<img src="images/3.jpg" />
 									</a>
@@ -622,7 +654,7 @@
 					<!---- Start Widget ---->
 					<div class="widget wid-news">
 						<div class="wid-header">
-							<h5>排行</h5>
+							<h5>Top News</h5>
 						</div>
 						<div class="wid-content">
 							<div class="row">
@@ -630,7 +662,7 @@
 									<div class="zoom-container">
 										<a href="single.html">
 											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
+												 <!--<i class="icon-play fa fa-play"></i>-->
 											</span>
 											<img src="images/1.jpg" />
 										</a>
@@ -648,7 +680,7 @@
 									<div class="zoom-container">
 										<a href="single.html">
 											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
+												 <!--<i class="icon-play fa fa-play"></i>-->
 											</span>
 											<img src="images/2.jpg" />
 										</a>
@@ -666,7 +698,7 @@
 									<div class="zoom-container">
 										<a href="single.html">
 											<span class="zoom-caption">
-												<!--<i class="icon-play fa fa-play"></i>-->
+												 <!--<i class="icon-play fa fa-play"></i>-->
 											</span>
 											<img src="images/4.jpg" />
 										</a>
@@ -732,8 +764,8 @@
 						<ul>
 							<li><a href="#">New Videos</a></li>
 							<li><a href="#">Featured Videos</a></li>
-							<li><a href="#">排行</a></li>
-							<li><a href="#">战斗型s Videos</a></li>
+							<li><a href="#">Most Viewed Videos</a></li>
+							<li><a href="#">Sports Videos</a></li>
 						</ul>
 					</div>
 				</div>
@@ -786,34 +818,12 @@
 	</footer>
 
 	<!-- Slider -->
-	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/common/jquery.min.js"></script>
 	<script src="js/demo.js"></script>
 	<script src="js/classie.js"></script>
 	<!-- Carousel -->
 	<script src="js/owl.carousel.js"></script>
-    <script>
-    $(document).ready(function() {
-
-      $("#owl-demo-1").owlCarousel({
-        items : 4,
-        lazyLoad : true,
-        navigation : true
-      });
-	  $("#owl-demo-2").owlCarousel({
-        items : 4,
-        lazyLoad : true,
-        navigation : true
-      });
-	  $("#owl-demo-3").owlCarousel({
-        items : 4,
-        lazyLoad : true,
-        navigation : true
-      });
-    });
-    </script>
+	<script src="js/common/vue.js"></script>
+	<script src="js/analysis/index.js" ></script>
 </div>
-<script src="js/common/jquery.min.js"></script>
-<script src="js/common/vue.js"></script>
-<script src="js/common/axios.min.js"></script>
-<script src="js/analysis/index.js" > </script>
 </body></html>

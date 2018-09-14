@@ -23,7 +23,7 @@ img{max-width:100%;	height: auto;width: auto\9; max-height: 100%; /* ie8 */}
 
 a{color: #333;font-size: 15px;/*默认。定义标准的文本。underline	定义文本下的一条线。*/ text-decoration: none;/*规定完成过渡效果需要多少秒或毫秒。*/-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;}
 
-h1, h2 	{font-size: 25px;line-height: 25px;}
+h1, h2 	{font-size: 25px;line-height: 25px; color: white;background:rgb(44, 40, 42)}
 h3, h4	{font-size: 20px;line-height: 20px;}
 h5, h6	{font-size: 16px;line-height: 16px;}
 /*上右下左*/
