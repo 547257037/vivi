@@ -1,5 +1,6 @@
 $(function(){
-
+    $(document).ready(function() {
+		
         $("#owl-demo-1").owlCarousel({
           items : 4,
           lazyLoad : true,
@@ -15,7 +16,7 @@ $(function(){
           lazyLoad : true,
           navigation : true
         });
-     
+      });
 // $.ajax({
 //     type: "get",
 //     url: "analysis/test.json",
@@ -25,7 +26,7 @@ $(function(){
 //     success:function (result) { 
     var result = {
         "data": {
-            "ti": [
+            "strongest": [
                 {
                     "heroName": "admin",
                     "heroPassword": "21232f297a57a5a743894a0e4a801fc3",
@@ -34,7 +35,7 @@ $(function(){
                     "heroLv": 0,
                     "updateTime": "2018-09-13 09:18:18.693489",
                     "heroPrice": 0,
-                    "imgPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\images\\4.jpg",
+                    "imgPath": ["E:\\tiantia\\src\\main\\resources\\static\\images\\4.jpg"],
                     "describe": null,
                     "videoPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\video\\bootstrap_3.3.7_css_bootstrap.min.css,E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\video\\deprecated-list.html",
                     "videoFiles": null,
@@ -181,7 +182,7 @@ $(function(){
                     "imageFiles": null
                 }
             ],
-            "1": [
+            "type0": [
                 {
                     "heroName": "1",
                     "heroPassword": "1",
@@ -251,9 +252,94 @@ $(function(){
                     "videoPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\video\\111.xlsx",
                     "videoFiles": null,
                     "imageFiles": null
+                },
+                {
+                    "heroName": "3",
+                    "heroPassword": "2",
+                    "heroType": 2,
+                    "createTime": "2018-09-04 01:39:10.729825",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-04 01:39:10.729825",
+                    "heroPrice": 2,
+                    "imgPath": "1",
+                    "describe": null,
+                    "videoPath": "2",
+                    "videoFiles": null,
+                    "imageFiles": null
+                },
+                {
+                    "heroName": "2",
+                    "heroPassword": "2",
+                    "heroType": 2,
+                    "createTime": "2018-09-04 01:40:14.503589",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-04 01:40:14.503589",
+                    "heroPrice": 0,
+                    "imgPath": null,
+                    "describe": null,
+                    "videoPath": null,
+                    "videoFiles": null,
+                    "imageFiles": null
+                },
+                {
+                    "heroName": "55",
+                    "heroPassword": "b53b3a3d6ab90ce0268229151c9bde11",
+                    "heroType": 2,
+                    "createTime": "2018-09-14 07:39:28.281305",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-14 07:39:28.281305",
+                    "heroPrice": 5,
+                    "imgPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\images\\LT 8,01-8,31.csv",
+                    "describe": null,
+                    "videoPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\video\\123.csv",
+                    "videoFiles": null,
+                    "imageFiles": null
+                },
+                {
+                    "heroName": "3",
+                    "heroPassword": "2",
+                    "heroType": 2,
+                    "createTime": "2018-09-04 01:39:10.729825",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-04 01:39:10.729825",
+                    "heroPrice": 2,
+                    "imgPath": "1",
+                    "describe": null,
+                    "videoPath": "2",
+                    "videoFiles": null,
+                    "imageFiles": null
+                },
+                {
+                    "heroName": "2",
+                    "heroPassword": "2",
+                    "heroType": 2,
+                    "createTime": "2018-09-04 01:40:14.503589",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-04 01:40:14.503589",
+                    "heroPrice": 0,
+                    "imgPath": null,
+                    "describe": null,
+                    "videoPath": null,
+                    "videoFiles": null,
+                    "imageFiles": null
+                },
+                {
+                    "heroName": "55",
+                    "heroPassword": "b53b3a3d6ab90ce0268229151c9bde11",
+                    "heroType": 2,
+                    "createTime": "2018-09-14 07:39:28.281305",
+                    "heroLv": 0,
+                    "updateTime": "2018-09-14 07:39:28.281305",
+                    "heroPrice": 5,
+                    "imgPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\images\\LT 8,01-8,31.csv",
+                    "describe": null,
+                    "videoPath": "E:\\vivi44\\target\\vivi44-0.0.1-SNAPSHOT\\WEB-INF\\classes\\static\\video\\123.csv",
+                    "videoFiles": null,
+                    "imageFiles": null
                 }
+                
             ],
-            "2": [
+            "type1": [
                 {
                     "heroName": "3",
                     "heroPassword": "2",
@@ -313,7 +399,7 @@ $(function(){
                     el : '#most',
                     data : {
                         ResponseResult : result,
-                        imgUrl : result.data.ti[0].imgPath
+                      
                     }
                 });
              

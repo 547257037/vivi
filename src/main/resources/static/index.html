@@ -89,13 +89,13 @@
     </nav>
 	<!--////////////////////////////////////Container-->
 	<section id="container" class="index-page">
-		<div class="wrap-container zerogrid">
+		<div class="wrap-container zerogrid" id="most">
 			
-			<div class="row">
+			<div class="row" >
 				<div class="header">
-					<h2>Most Viewed Videos</h2>
+					<h2>最受欢迎</h2>
 				</div>
-				<div class="row" id="most">
+				<div class="row" >
 				<div class="most-viewed">
 					<div class="col-2-4">
 						<div class="wrap-col" >
@@ -104,14 +104,13 @@
 									<span class="zoom-caption">
                                                 <!-- <!--<i class="icon-play fa fa-play"></i>-->-->
                                             </span>                                         
-                                            <img :src="ResponseResult.data.ti[0].imgPath" style="width: 560px ; height: 310px;" class="top-img" />										
+                                            <img :src="ResponseResult.data.strongest[0].imgPath[0]" style="width: 560px ; height: 310px;" class="top-img" />										
 								</a>
 							</div>
 							
-									<h1> 英雄名称 {{ResponseResult.data.type[0].heroName}}</h1>	
-									<h1> 英雄等级{{ResponseResult.data.type[0].heroLv}}</h1>
-								
-							     
+									<h2> 英雄名称 {{ResponseResult.data.strongest[0].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[0].heroLv}}</h1>
+															     
 						</div>
 					</div>
 				</div>
@@ -125,9 +124,11 @@
 									</span>
 									<img src="images/1.jpg" />
 								</a>
+								<h2> 英雄名称 {{ResponseResult.data.strongest[0].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[0].heroLv}}</h1>
 							</div>
-							<h1> 英雄名称 {{ResponseResult.data.type[1].heroName}}</h1>	
-									<h1> 英雄等级{{ResponseResult.data.type[1].heroLv}}</h1>
+
+						
 							<div class="zoom-container">
 								<a href="single.html">
 									<span class="zoom-caption">
@@ -135,7 +136,10 @@
 									</span>
 									<img src="images/2.jpg" />
 								</a>
+								<h2> 英雄名称 {{ResponseResult.data.strongest[1].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[1].heroLv}}</h1>
 							</div>
+						
 						</div>
 					</div>
 					<div class="col-1-4">
@@ -147,6 +151,8 @@
 									</span>
 									<img src="images/5.jpg" />
 								</a>
+									<h2> 英雄名称 {{ResponseResult.data.strongest[2].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[2].heroLv}}</h1>
 							</div>
 							<div class="zoom-container">
 								<a href="single.html">
@@ -155,6 +161,8 @@
 									</span>
 									<img src="images/14.jpg" />
 								</a>
+								<h2> 英雄名称 {{ResponseResult.data.strongest[3].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[3].heroLv}}</h1>
 							</div>
 						</div>
 					</div>
@@ -166,7 +174,7 @@
 					<div class="wrap-content">
 						<section class="vid-tv">
 							<div class="header">
-								<h2>TV</h2>
+								<h2>战斗型</h2>
 							</div>
 							<div class="row">
 								<div id="owl-demo-1" class="owl-carousel">
@@ -178,12 +186,13 @@
 												</span>
 												<img src="images/1.jpg" />
 											</a>
+											
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
+											<h5>英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
+											<span><i class="fa fa-calendar"></i></span> 
+											<span><i class="fa fa-heart"></i> </span>
 										</div>
 									</div>
 									<div class="item wrap-vid">
@@ -195,9 +204,9 @@
 												<img src="images/2.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[1].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5>英雄等级{{ResponseResult.data.type0[1].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -211,9 +220,9 @@
 												<img src="images/3.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[2].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[2].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -227,9 +236,9 @@
 												<img src="images/4.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[3].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[3].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -243,9 +252,9 @@
 												<img src="images/5.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[4].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[4].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -259,9 +268,9 @@
 												<img src="images/14.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[5].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[5].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -275,9 +284,9 @@
 												<img src="images/3.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -291,9 +300,9 @@
 												<img src="images/5.jpg" />
 											</a>
 										</div>
-										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
 										<div class="info">
-											<h5>By <a href="#">Kelvin</a></h5>
+											<h5> 英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
 											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
@@ -825,5 +834,8 @@
 	<script src="js/owl.carousel.js"></script>
 	<script src="js/common/vue.js"></script>
 	<script src="js/analysis/index.js" ></script>
+	<script>
+	
+			</script>
 </div>
 </body></html>
