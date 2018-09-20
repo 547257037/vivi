@@ -397,12 +397,17 @@ $(function(){
             var v =new Vue({
                     el : '#most',
                     data : {
-                        ResponseResult : result,
+                        ResponseResult : result
                       
                     }
                 });
              
-                    
+            var fightingVue = new Vue({
+                el:'#fighting',
+                data:{
+                    fightingVue : result.data.type0
+                }
+            })
                 
 //        }   
            

@@ -89,9 +89,9 @@
     </nav>
 	<!--////////////////////////////////////Container-->
 	<section id="container" class="index-page">
-		<div class="wrap-container zerogrid" id="most">
+		<div class="wrap-container zerogrid" >
 			
-			<div class="row" >
+			<div class="row" id="most">
 				<div class="header">
 					<h2>最受欢迎</h2>
 				</div>
@@ -176,9 +176,9 @@
 							<div class="header">
 								<h2>战斗型</h2>
 							</div>
-							<div class="row">
-								<div id="owl-demo-1" class="owl-carousel">
-									<div class="item wrap-vid">
+							<div class="row" id="fighting" >
+								<div id="owl-demo-1" class="owl-carousel" v-for="f-right in fightingVue">
+									<div class="item wrap-vid" >
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
@@ -188,123 +188,11 @@
 											</a>
 											
 										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
+										<h3 class="vid-name">英雄名称 {{f-right.heroName}}</h3>
 										<div class="info">
-											<h5>英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
+											<h5>英雄等级{{f-right.heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i></span> 
 											<span><i class="fa fa-heart"></i> </span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/2.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[1].heroName}}</h3>
-										<div class="info">
-											<h5>英雄等级{{ResponseResult.data.type0[1].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/3.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[2].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[2].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid" >
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/4.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[3].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[3].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/5.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[4].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[4].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/14.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[5].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[5].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/3.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
-										</div>
-									</div>
-									<div class="item wrap-vid">
-										<div class="zoom-container">
-											<a href="single.html">
-												<span class="zoom-caption">
-													 <!--<i class="icon-play fa fa-play"></i>-->
-												</span>
-												<img src="images/5.jpg" />
-											</a>
-										</div>
-										<h3 class="vid-name">英雄名称 {{ResponseResult.data.type0[0].heroName}}</h3>
-										<div class="info">
-											<h5> 英雄等级{{ResponseResult.data.type0[0].heroLv}}</h5>
-											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
-											<span><i class="fa fa-heart"></i>1,200</span>
 										</div>
 									</div>
 								</div>
