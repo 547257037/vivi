@@ -25,25 +25,16 @@
 	<link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
 	<!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap_3.3.7_css_bootstrap.min.css">
 	
-	<!--[if lt IE 8]>
-       <div style=' clear: both; text-align:center; position: relative;'>
-         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-        </a>
-      </div>
-    <![endif]-->
-    <!--[if lt IE 9]>
-		<script src="js/html5.js"></script>
-		<script src="js/css3-mediaqueries.js"></script>
-	<![endif]-->
+
     
 </head>
 <body id="wrapper" >
 <div class="wrap-body">
 	
-	<!--////////////////////////////////////Header-->
+
 	<header>
 		<div class="wrap-header">
 			<div class="zerogrid">
@@ -85,7 +76,15 @@
 			<li class="colour-7"><a href="gallery.html">开心果</a></li>
 			<li class="colour-8"><a href="gallery.html">其他</a></li>		
 		</ul>
-    </nav>
+	</nav>
+	<div class="tanchu_kuang" id="tanchu_kuang">
+		<div class="kuang_title_box">
+			<a id="close_x" href="#">x</a>
+		</div>
+		<div class="kuang_contant">
+						
+		</div>
+	</div>
 	<!--////////////////////////////////////Container-->
 	<section id="container" class="index-page">
 		<div class="wrap-container zerogrid">
@@ -101,7 +100,8 @@
 							<h3> 英雄价格每小时{{ResponseResult.data.type0[0].heroPrice}}</h3>
 					</div>
 					<p>英雄信息{{ResponseResult.data.type0[0].describe}}</p>
-					
+				
+					    <button id="tanchu_btn"   type="button" class="btn btn-info">和他聊聊</button>
 					<section class="vid-related">
 						<div class="header">
 							<h2>英雄其他视频</h2>
@@ -124,6 +124,7 @@
 										<span><i class="fa fa-heart"></i>1,200</span>
 									</div>
 								</div>
+								
 								<div class="item wrap-vid">
 									<div class="zoom-container">
 										<a href="single.html">
@@ -479,12 +480,14 @@
 	</footer>
 
 	<!-- Slider -->
-	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/common/jquery.min.js"></script>
 	<script src="js/demo.js"></script>
 	<!-- Search -->
 	<script src="js/modernizr.custom.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/uisearch.js"></script>
+	<script src="js/common/bootstrap-3.0.3.min.js"></script>
+	<script src="js/analysis/chat.js"></script>
 	<script>
 		new UISearch( document.getElementById( 'sb-search' ) );
 	</script>

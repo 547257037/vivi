@@ -1,5 +1,4 @@
 $(function(){
-    $(document).ready(function() {
 		
         $("#owl-demo-1").owlCarousel({
           items : 4,
@@ -411,4 +410,3 @@ $(function(){
   //  })
 //    }
 // })
-});
