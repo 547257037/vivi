@@ -5,7 +5,6 @@ import com.tiantian.common.DayRange;
 import com.tiantian.common.TimeRange;
 import com.tiantian.config.exception.StarvException;
 import com.tiantian.enums.DayInterval;
-import com.tiantian.enums.TimeInterval;
 import lombok.NonNull;
 import org.apache.commons.lang3.time.DateUtils;
 import org.joda.time.*;

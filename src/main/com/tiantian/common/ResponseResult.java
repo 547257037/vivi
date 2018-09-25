@@ -38,11 +38,11 @@ public class ResponseResult {
     }
 
     public static ResponseResult putSuccessMessage(String message) {
-        return new ResponseResult(null, true, message, StarvConst.SUCCESS_CODE);
+        return new ResponseResult(null, true, message, TianTianConst.SUCCESS_CODE);
     }
 
     public static ResponseResult putSuccessMessage() {
-        return new ResponseResult(null, true, "success", StarvConst.SUCCESS_CODE);
+        return new ResponseResult(null, true, "success", TianTianConst.SUCCESS_CODE);
     }
 
     public static ResponseResult putPageList(List data, PageInfo pageInfo) {
@@ -50,14 +50,14 @@ public class ResponseResult {
     }
 
     public static ResponseResult putPageList(List data, PageInfo pageInfo, String warnMessage) {
-        ResponseResult responseResult = new ResponseResult(data, true, warnMessage, StarvConst.SUCCESS_CODE);
+        ResponseResult responseResult = new ResponseResult(data, true, warnMessage, TianTianConst.SUCCESS_CODE);
         responseResult.setPageInfo(pageInfo);
         return responseResult;
     }
 
 
     public static ResponseResult putError(String errorMessage) {
-        return new ResponseResult(null, false, errorMessage, StarvConst.CUSTOMS_ERROR_CODE);
+        return new ResponseResult(null, false, errorMessage, TianTianConst.CUSTOMS_ERROR_CODE);
     }
 
     public static ResponseResult putError(String errorMessage, int errorCode) {
@@ -65,7 +65,7 @@ public class ResponseResult {
     }
 
     public static ResponseResult putError() {
-        return new ResponseResult(null, false, "未捕获的异常", StarvConst.UNCHECKED_ERROR_CODE);
+        return new ResponseResult(null, false, "未捕获的异常", TianTianConst.UNCHECKED_ERROR_CODE);
     }
 
     public Object getOtherData() {

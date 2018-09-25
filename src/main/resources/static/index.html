@@ -177,8 +177,9 @@
 								<h2>战斗型</h2>
 							</div>
 							<div class="row" id="fighting" >
-								<div id="owl-demo-1" class="owl-carousel" v-for="f-right in fightingVue">
-									<div class="item wrap-vid" >
+									
+								<div id="owl-demo-1" class="owl-carousel" >
+									<div class="item wrap-vid" v-for="fright in fightingVue">
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
@@ -188,14 +189,15 @@
 											</a>
 											
 										</div>
-										<h3 class="vid-name">英雄名称 {{f-right.heroName}}</h3>
+										<h3 class="vid-name">英雄名称 {{fright.heroName}}</h3>
 										<div class="info">
-											<h5>英雄等级{{f-right.heroLv}}</h5>
+											<h5>英雄等级{{fright.heroLv}}</h5>
 											<span><i class="fa fa-calendar"></i></span> 
 											<span><i class="fa fa-heart"></i> </span>
 										</div>
 									</div>
 								</div>
+								
 							</div>
 						</section>
 						

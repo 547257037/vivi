@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
  */
 @Lazy(false)
 @Component
-public class StarvConst {
+public class TianTianConst {
 
     private static String APPLICATION_PROFILE;
 
