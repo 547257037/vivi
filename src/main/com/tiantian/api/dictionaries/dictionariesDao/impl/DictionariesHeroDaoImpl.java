@@ -21,7 +21,7 @@ public class DictionariesHeroDaoImpl implements IDictionariesHeroDao {
 
     @Override
     public void sveDictionariesHero(Hero hero) {
-        String insertSql="insert into hero(hero_name,hero_password,hero_type,hero_price,img_path,video_path,describe) values(?,?,?,?,?,?,?)";
+        String insertSql="insert into hero(hero_name,hero_password,hero_type,hero_price,img_path,video_path,hero_describe) values(?,?,?,?,?,?,?)";
         psql.update(insertSql,hero.getHeroName(),hero.getHeroPassword(),hero.getHeroType(),hero.getHeroPrice(),hero.getImgPath(),hero.getVideoPath(),hero.getDescribe());
     }
 
@@ -29,6 +29,11 @@ public class DictionariesHeroDaoImpl implements IDictionariesHeroDao {
     public Hero findHeroByUsername(String heroName) {
         String sql = "select * from hero where hero_name = ? ";
         return psql.queryOneObject(sql,new BeanPropertyRowMapper<>(Hero.class),heroName);
+    }
+
+    @Override
+    public Hero findUserByUsernameAndPassword(String heroName, String password) {
+        return null;
     }
 
 }

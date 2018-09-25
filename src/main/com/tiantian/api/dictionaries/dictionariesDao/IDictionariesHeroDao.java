@@ -10,4 +10,6 @@ public interface IDictionariesHeroDao {
     void sveDictionariesHero(Hero hero);
 
     Hero findHeroByUsername(String heroName);
+
+    Hero findUserByUsernameAndPassword(String heroName, String password);
 }

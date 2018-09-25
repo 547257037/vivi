@@ -95,8 +95,8 @@
     <schema id="20" parent="3" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2018-09-13.08:31:34.228</IntrospectionTimestamp>
-      <IntrospectionStateNumber>15613</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-09-26.09:59:26.286</IntrospectionTimestamp>
+      <IntrospectionStateNumber>16098</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -144,7 +144,7 @@
     </access-method>
     <table id="27" parent="20" name="hero">
       <ObjectId>26722</ObjectId>
-      <StateNumber>15613</StateNumber>
+      <StateNumber>16097</StateNumber>
     </table>
     <routine id="28" parent="20" name="upd_timestamp">
       <ObjectId>26734</ObjectId>
@@ -171,11 +171,11 @@
     </column>
     <column id="31" parent="27" name="hero_type">
       <Position>3</Position>
-      <DataType>integer|0s</DataType>
+      <DataType>varchar(300)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>15612</StateNumber>
-      <DefaultExpression>0</DefaultExpression>
-      <TypeId>23</TypeId>
+      <StateNumber>16091</StateNumber>
+      <DefaultExpression>&apos;type0&apos;::character varying</DefaultExpression>
+      <TypeId>1043</TypeId>
     </column>
     <column id="32" parent="27" name="create_time">
       <Position>4</Position>
@@ -186,11 +186,11 @@
     </column>
     <column id="33" parent="27" name="hero_lv">
       <Position>5</Position>
-      <DataType>integer|0s</DataType>
+      <DataType>varchar(200)|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>15613</StateNumber>
-      <DefaultExpression>0</DefaultExpression>
-      <TypeId>23</TypeId>
+      <StateNumber>16097</StateNumber>
+      <DefaultExpression>&apos;D&apos;::bpchar</DefaultExpression>
+      <TypeId>1043</TypeId>
     </column>
     <column id="34" parent="27" name="update_time">
       <Position>6</Position>
@@ -220,10 +220,10 @@
       <StateNumber>8972</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="27" name="describe">
+    <column id="38" parent="27" name="hero_describe">
       <Position>10</Position>
       <DataType>varchar(300)|0s</DataType>
-      <StateNumber>15585</StateNumber>
+      <StateNumber>16098</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="39" parent="27" name="hero_hero_name_uindex">

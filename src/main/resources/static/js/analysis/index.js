@@ -394,7 +394,7 @@ $(function(){
       
        // if(item.heroType==1){          
            
-           
+
              
             var fightingVue = new Vue({
                 el:'#fighting',

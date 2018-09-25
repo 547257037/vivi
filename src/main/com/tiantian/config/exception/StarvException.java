@@ -1,6 +1,6 @@
 package com.tiantian.config.exception;
 
-import com.tiantian.common.StarvConst;
+import com.tiantian.common.TianTianConst;
 
 /**
  *
@@ -12,7 +12,7 @@ import com.tiantian.common.StarvConst;
  */
 public class StarvException extends RuntimeException {
 
-    private int errorCode = StarvConst.CUSTOMS_ERROR_CODE;
+    private int errorCode = TianTianConst.CUSTOMS_ERROR_CODE;
 
     public StarvException(String message) {
         super(message);

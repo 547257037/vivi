@@ -2,13 +2,13 @@ package com.tiantian.utils;
 
 import javax.websocket.RemoteEndpoint;
 import javax.websocket.Session;
-import java.io.IOException;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class WebSocketUtils {
     /**
-     * 模拟存储 websocket session 使用
+     * 模拟存储 websocket session 使用 后期可以放在其他地方
      */
     public static final Map<String, Session> LIVING_SESSIONS_CACHE = new ConcurrentHashMap<>();
 

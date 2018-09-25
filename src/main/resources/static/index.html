@@ -89,7 +89,7 @@
     </nav>
 	<!--////////////////////////////////////Container-->
 	<section id="container" class="index-page">
-		<div class="wrap-container zerogrid"  id="fighting">
+		<div class="wrap-container zerogrid" >
 			
 			<div class="row" id="most">
 				<div class="header">
@@ -102,7 +102,7 @@
 							<div class="zoom-container">
 								<a href="single.html">
 									<span class="zoom-caption">
-                                                <!-- <!--<i class="icon-play fa fa-play"></i>-->
+                                                <!-- <!--<i class="icon-play fa fa-play"></i>-->-->
                                             </span>                                         
                                             <img :src="ResponseResult.data.strongest[0].imgPath[0]" style="width: 560px ; height: 310px;" class="top-img" />										
 								</a>
@@ -114,7 +114,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="extra" v-for="(item,index) in ResponseResult.data.strongest"  v-if="index <=4 && index >0 ">
+				<div class="extra">
 					<div class="col-1-4">
 						<div class="wrap-col">
 							<div class="zoom-container">
@@ -124,10 +124,46 @@
 									</span>
 									<img src="images/1.jpg" />
 								</a>
-								<h2> 英雄名称 {{item.heroName}}</h1>	
-									<h2> 英雄等级{{item.heroLv}}</h1>
-							</div>								
-												
+								<h2> 英雄名称 {{ResponseResult.data.strongest[0].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[0].heroLv}}</h1>
+							</div>
+
+						
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/2.jpg" />
+								</a>
+								<h2> 英雄名称 {{ResponseResult.data.strongest[1].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[1].heroLv}}</h1>
+							</div>
+						
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/5.jpg" />
+								</a>
+									<h2> 英雄名称 {{ResponseResult.data.strongest[2].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[2].heroLv}}</h1>
+							</div>
+							<div class="zoom-container">
+								<a href="single.html">
+									<span class="zoom-caption">
+										 <!--<i class="icon-play fa fa-play"></i>-->
+									</span>
+									<img src="images/14.jpg" />
+								</a>
+								<h2> 英雄名称 {{ResponseResult.data.strongest[3].heroName}}</h1>	
+									<h2> 英雄等级{{ResponseResult.data.strongest[3].heroLv}}</h1>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -140,9 +176,10 @@
 							<div class="header">
 								<h2>战斗型</h2>
 							</div>
-							<div class="row"  >
-								<div id="owl-demo-1" class="owl-carousel" v-for="fright in fightingVue">
-									<div class="item wrap-vid" >
+							<div class="row" id="fighting" >
+									
+								<div id="owl-demo-1" class="owl-carousel" >
+									<div class="item wrap-vid" v-for="fright in fightingVue">
 										<div class="zoom-container">
 											<a href="single.html">
 												<span class="zoom-caption">
@@ -160,6 +197,7 @@
 										</div>
 									</div>
 								</div>
+								
 							</div>
 						</section>
 						
