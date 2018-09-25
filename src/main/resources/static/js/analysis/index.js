@@ -394,18 +394,13 @@ $(function(){
       
        // if(item.heroType==1){          
            
-            var v =new Vue({
-                    el : '#most',
-                    data : {
-                        ResponseResult : result
-                      
-                    }
-                });
+           
              
             var fightingVue = new Vue({
                 el:'#fighting',
                 data:{
-                    fightingVue : result.data.type0
+                    fightingVue : result.data.type0,
+                    ResponseResult : result
                 }
             })
                 
