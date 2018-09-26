@@ -16,12 +16,12 @@ public class DictionariesHeroDaoImpl implements IDictionariesHeroDao {
     private Jdbc psql;
     @Override
     public List<Hero> getAllDictionariesHeroList() {
-        return psql.query("select * from hero ", new BeanPropertyRowMapper<>( Hero.class));
+        return psql.query("select * from hero3 ", new BeanPropertyRowMapper<>( Hero.class));
     }
 
     @Override
     public void sveDictionariesHero(Hero hero) {
-        String insertSql="insert into hero(hero_name,hero_password,hero_type,hero_price,img_path,video_path,hero_describe) values(?,?,?,?,?,?,?)";
+        String insertSql="insert into hero3(hero_name,hero_password,hero_type,hero_price,img_path,video_path,hero_describe) values(?,?,?,?,?,?,?)";
         psql.update(insertSql,hero.getHeroName(),hero.getHeroPassword(),hero.getHeroType(),hero.getHeroPrice(),hero.getImgPath(),hero.getVideoPath(),hero.getDescribe());
     }
 

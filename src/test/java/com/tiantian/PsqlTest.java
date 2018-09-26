@@ -22,7 +22,7 @@ public class PsqlTest {
 
     @Test
     public void gggg() throws Exception {
-        List list  =psql.query("select * from hero ", new BeanPropertyRowMapper( Hero.class));
+        List list  =psql.query("select * from hero3 ", new BeanPropertyRowMapper( Hero.class));
             System.out.println(list);
 
     }

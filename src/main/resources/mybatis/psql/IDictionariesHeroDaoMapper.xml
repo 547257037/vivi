@@ -6,7 +6,7 @@
 <mapper namespace="com.tiantian.mapper.psql.IDictionariesHeroDaoMapper">
 
     <select id="queryStarvChannelGroup"  resultType="com.tiantian.api.dictionaries.dictionariesEntity.Hero">
-        select * FROM hero
+        select * FROM hero3
 
     </select>
 </mapper>

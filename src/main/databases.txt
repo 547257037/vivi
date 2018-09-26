@@ -22,3 +22,51 @@ $$
 language plpgsql;
 
 create trigger update_time before update on hero for each row execute procedure upd_timestamp();
+
+
+
+
+
+
+
+
+订单
+
+create table BuyerOrder
+(
+  order_id     varchar(300)                                      not null,
+  buyer_name    varchar(300)                                      not null,
+  buyer_phone        varchar(255),
+  buyer_address      varchar(255),
+  hero_id  varchar(255)          not null,
+  order_amount   numeric              not null,
+  order_status    bigint        default  0                    not null,
+  pay_status      bigint default 0,
+  create_time    varchar(250) default CURRENT_TIMESTAMP,
+  update_time varchar(250) default CURRENT_TIMESTAMP,
+  order_detail_id varchar(50)
+);
+
+create unique index buyer_name_uindex
+  on BuyerOrder (buyer_name);
+create unique index order_id_uindex
+  on BuyerOrder (order_id);
+
+create trigger update_time
+  before update
+  on BuyerOrder
+  for each row
+execute procedure upd_timestamp();
+
+
+订单明细
+create table order_detail
+(
+  detail_id     varchar(255)                                      not null,
+  order_id    varchar(255)                                         not null,
+  product_id        varchar(255),
+  product_name      varchar(255),
+  product_price  numeric         not null,
+  product_quantity      bigint    default 0      ,
+  product_icon    bigint
+);

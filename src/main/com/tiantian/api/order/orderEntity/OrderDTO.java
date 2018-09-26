@@ -7,6 +7,7 @@ import com.tiantian.enums.PayStatusEnum;
 import com.tiantian.utils.EnumUtils;
 import lombok.Data;
 
+import javax.validation.constraints.NotEmpty;
 import java.math.BigDecimal;
 import java.util.List;
 @Data
@@ -25,8 +26,8 @@ public class OrderDTO {
     /** 买家地址. */
     private String buyerAddress;
 
-    /** 买家微信Openid. */
-    private String buyerOpenid;
+    /** 买家id. */
+    private String heroId;
 
     /** 订单总金额. */
     private BigDecimal orderAmount;
@@ -44,7 +45,11 @@ public class OrderDTO {
     /** 更新时间. */
 
     private String updateTime;
-
+    /**
+     * 购物车
+     */
+    @NotEmpty(message = "购物车不能为空")
+    private String items;
     List<OrderDetail> orderDetailList;
 
     @JsonIgnore
