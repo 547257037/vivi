@@ -24,9 +24,11 @@ package com.tiantian.psqlTest;
 //import java.util.List;
 //import static org.junit.Assert.*;
 //
-//import org.junit.runner.RunWith;
-//import org.springframework.boot.test.context.SpringBootTest;
-//import org.springframework.test.context.junit4.SpringRunner;
+
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @author 付天
@@ -35,10 +37,17 @@ package com.tiantian.psqlTest;
  * @Description: ${TODO}
  * @date 2018/5/28 0028下午 4:33
  */
-//@RunWith(SpringRunner.class)
-//@SpringBootTest
+@RunWith(SpringRunner.class)
+@SpringBootTest
 //
 public class IDictChannelServiceTest {
+
+//    @Cacheable(value="thisredis", key="'users_'+#id")
+//    public OrderDetail findUser(Integer id) {
+//        OrderDetail orderDetail=new OrderDetail();
+//        orderDetail.setDetailId("1122");
+//        return orderDetail;
+//    }
 //    @Autowired
 //    private JdbcTemplate pg;
 //
