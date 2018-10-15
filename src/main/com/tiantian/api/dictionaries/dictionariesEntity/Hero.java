@@ -25,4 +25,7 @@ public class Hero {
 
     public Hero(int i, java.lang.String one, int i1, java.util.Date date, java.lang.String controllertest) {
     }
+
+   public Hero() {
+   }
 }
