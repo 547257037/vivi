@@ -1,9 +1,12 @@
 package com.tiantian.api.order.orderEntity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
+@Data
 public class BuyerCart implements Serializable {
     //商品结果集
       private List<BuyerItem> items = new ArrayList<BuyerItem>();
@@ -23,28 +26,47 @@ public class BuyerCart implements Serializable {
                      }
 
              }
-    https://blog.csdn.net/qq_39827935/article/details/81386751
-        @Override
-        public int hashCode() {
-       final int prime = 31;
-           int result = 1;
-          result = prime * result + ((sku == null) ? 0 : sku.hashCode());
-          return result;
-         }
-         @Override
-         public boolean equals(Object obj) {
-                 if (this == obj) //比较地址
-                         return true;
-                 if (obj == null)
-                         return false;
-                if (getClass() != obj.getClass())
-                         return false;
-                 BuyerItem other = (BuyerItem) obj;
-                 if (sku == null) {
 
-                     } else if (!sku.getId().equals(other.sku.getId()))
-                         return false;
-                 return true;
+    //小计
+     //商品数量
+             @JsonIgnore
+            public Integer getProductAmount(){
+                 Integer result = 0;
+                 //计算
+                 for (BuyerItem buyerItem : items) {
+                         result += buyerItem.getAmount();
+                     }
+                 return result;
              }
+
+             //商品金额
+             @JsonIgnore
+            public Float getProductPrice(){
+                 Float result = 0f;
+                 //计算
+                 for (BuyerItem buyerItem : items) {
+                         result += buyerItem.getAmount()*buyerItem.getSku().getPrice();
+                     }
+                 return result;
+             }
+
+             //运费
+             @JsonIgnore
+           public Float getFee(){
+                 Float result = 0f;
+                 //计算
+                 if (getProductPrice() < 79) {
+                         result = 5f;
+                     }
+
+                 return result;
+             }
+
+             //总价
+             @JsonIgnore
+             public Float getTotalPrice(){
+                 return getProductPrice() + getFee();
+             }
+
 
 }

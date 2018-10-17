@@ -20,6 +20,8 @@ import java.util.regex.Pattern;
 @Lazy(false)
 @Component
 public class TianTianConst {
+    public static final String REDIS_SESSION_KEY = "logion";
+    public static final long SESSION_EXPIRE = 6000;
 
     private static String APPLICATION_PROFILE;
 
