@@ -22,6 +22,7 @@ import java.util.regex.Pattern;
 public class TianTianConst {
     public static final String REDIS_SESSION_KEY = "logion";
     public static final long SESSION_EXPIRE = 6000;
+    public static final String HERO_TOKEN = "logionToken";
 
     private static String APPLICATION_PROFILE;
 

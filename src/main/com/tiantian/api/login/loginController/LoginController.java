@@ -23,15 +23,13 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
     @Autowired
     private IloginService iloginService;
+
     /**
      * 用户登录
      */
     @RequestMapping("/login")
-    public ResponseResult login(@RequestBody Hero user, HttpServletResponse response, HttpServletRequest request) {
-        Hero systemUser1 = (Hero) SessionUtils.getSessionAttr(TianTianConst.SESSION_SYSUSER);
-        if(systemUser1!=null){
-            return ResponseResult.putSuccessData(systemUser1, "已有用户登录,请先退出已登录用户");
-        }
+    public ResponseResult login(@RequestBody(required = false) Hero user, HttpServletResponse response, HttpServletRequest request) {
+
         Hero hero = iloginService.login(user);
 
         if (hero != null) {
@@ -47,15 +45,9 @@ public class LoginController {
             //设置session的过期时间
             RedisUtils.expire(TianTianConst.REDIS_SESSION_KEY + ":" + token, TianTianConst.SESSION_EXPIRE);
             //写cookie
-            CookieUtils.setCookie(request, response, "HERO_TOKEN", token);
+            CookieUtils.setCookie(request, response, TianTianConst.HERO_TOKEN, token);
 
-
-//            //登录成功,将user对象放入session，跳转到首页
-//            hero.setHeroPassword(null);
-//            HttpSession session = SessionUtils.getSession();
-//            session.setAttribute(TianTianConst.SESSION_SYSUSER, hero);
-//            session.setMaxInactiveInterval(60 * 60 * 10);
-//            return ResponseResult.putSuccessData(hero, "登陆成功");
+            return ResponseResult.putSuccessData(token);
         } else {
             //登录失败，,设置提示信息，跳转到登录页面
             //输入的验证码错误,设置提示信息，跳转到登录页面
@@ -64,5 +56,4 @@ public class LoginController {
 
     }
 
-
-}
+    }
