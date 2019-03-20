@@ -15,7 +15,26 @@ $(function(){
           lazyLoad : true,
           navigation : true
         });
+
+
       });
+function myFunction() {
+
+    $("#userNameList option").remove();
+    $.ajaxSetup({async: true});
+    $.get("http://localhost:8080/DictionariesController/getDictionariesHeroList", {'heroName' : $("#userName").val() == "" ? null : $("#userName").val()}, function(oo) {
+        for(var i in oo.data) {
+            /* $("#userNameList").append("<option value=data[i].username data-userId=data[i].id ></option>"); */
+            var html = "";
+
+            html += "<option value='" + oo.data[i].heroName +" '></option>";
+            $("#userNameList").append(html);
+            /* console.log(html); */
+        }
+    }, "json")
+}
+
+
 // $.ajax({
 //     type: "get",
 //     url: "analysis/test.json",

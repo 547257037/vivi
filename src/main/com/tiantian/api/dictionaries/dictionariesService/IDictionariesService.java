@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 
 public interface IDictionariesService {
-    List<Hero> getAllDictionariesHeroList();
+    List<Hero> getAllDictionariesHeroList(Hero hero);
 
 
 

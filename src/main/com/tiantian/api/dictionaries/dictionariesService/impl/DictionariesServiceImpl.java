@@ -24,8 +24,8 @@ public class DictionariesServiceImpl implements IDictionariesService {
     @Autowired
     private IDictionariesHeroDao dictionariesHeroDao;
     @Override
-    public List<Hero>  getAllDictionariesHeroList() {
-        return dictionariesHeroDao.getAllDictionariesHeroList();
+    public List<Hero>  getAllDictionariesHeroList(Hero hero) {
+        return dictionariesHeroDao.getAllDictionariesHeroList(hero);
     }
 
 

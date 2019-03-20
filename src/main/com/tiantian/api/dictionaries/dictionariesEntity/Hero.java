@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class Hero {
+public class Hero  implements Comparable<Hero> {
 
  private String heroName;
     private String heroPassword;
@@ -27,5 +27,11 @@ public class Hero {
     }
 
    public Hero() {
+   }
+
+   @Override
+   public int compareTo(Hero o) {
+
+      return this.getHeroLv().compareTo(o.getHeroLv());
    }
 }

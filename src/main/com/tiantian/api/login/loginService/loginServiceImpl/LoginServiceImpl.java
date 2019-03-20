@@ -38,9 +38,10 @@ public class LoginServiceImpl implements IloginService {
         }
         //调用sso的服务查询用户信息(查redis)
         Object o = RedisUtils.get(TianTianConst.HERO_TOKEN);
-        JacksonUtil.jsonToObject(Redi);
+//        JacksonUtil.jsonToObject(o);
         //把json转换成java对象
 
 
+        return null;
     }
 }
