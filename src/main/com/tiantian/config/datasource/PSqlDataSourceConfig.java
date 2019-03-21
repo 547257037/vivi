@@ -47,6 +47,7 @@ public class PSqlDataSourceConfig {
         return new HikariDataSource(pSqlDataSourceProperties());
     }
 
+
     @Primary
     @Bean(name = "pSql")
     public JdbcTemplate pSqlJdbcTemplate() {

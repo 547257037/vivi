@@ -19,6 +19,7 @@ import org.mybatis.spring.SqlSessionFactoryBean;
 
 import org.mybatis.spring.SqlSessionTemplate;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -27,6 +28,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 import org.springframework.context.annotation.Bean;
 
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -38,16 +40,17 @@ import com.alibaba.druid.pool.DruidDataSource;
  * 数据源配置抽象类
 
  */
-
+@MapperScan(basePackages = "com.tiantian.mapper.psql", sqlSessionTemplateRef = "sqlSessionTemplate")
+@Configuration
 public  class DataSourceConfig {
 
-    @Autowired
 
-    private Environment env;
 
-    @Value("${datasources}")
-
-    private String datasources;
+//    @Autowired
+//    private Environment env;
+//
+//    @Value("${datasources}")
+//    private String datasources;
 
     /*
 
@@ -61,13 +64,12 @@ public  class DataSourceConfig {
 
         DruidDataSource defaultDS = new DruidDataSource();
 
-        defaultDS.setUrl(env.getProperty("spring.datasource.druid.url"));
+        //放入数据源
+        defaultDS.setUrl("jdbc:log4jdbc:mysql://localhost:3306/cloudDB01");
+        defaultDS.setUsername("root");
+        defaultDS.setPassword("");
+        defaultDS.setDriverClassName("net.sf.log4jdbc.DriverSpy");
 
-        defaultDS.setUsername(env.getProperty("spring.datasource.druid.username"));
-
-        defaultDS.setPassword(env.getProperty("spring.datasource.druid.password"));
-
-        defaultDS.setDriverClassName(env.getProperty("spring.datasource.druid.driver-class-name"));
 
 
 
@@ -90,32 +92,19 @@ public  class DataSourceConfig {
         Map<Object,Object> map = new HashMap();
 
 
-
-        if (datasources != null && datasources.length() > 0) {
-
-            String[] names = datasources.split(",");
-
-            for (String name : names) {
-
+                //todo 在redis中取,
                 DruidDataSource dataSource = new DruidDataSource();
-
-                dataSource.setUrl(env.getProperty("spring.datasource." + name + ".url"));
-
-                dataSource.setUsername(env.getProperty("spring.datasource." + name + ".username"));
-
-                dataSource.setPassword(env.getProperty("spring.datasource." + name + ".password"));
-
-                dataSource.setDriverClassName(env.getProperty("spring.datasource." + name + ".driver-class-name"));
-
-
-
-                map.put(name, dataSource);
-
-            }
-
-        }
-
-
+                dataSource.setUrl("jdbc:log4jdbc:mysql://localhost:3306/cloudDB01");
+                dataSource.setUsername("root");
+                dataSource.setPassword("");
+                dataSource.setDriverClassName("net.sf.log4jdbc.DriverSpy");
+                map.put("cloudDB01", dataSource);
+                DruidDataSource dataSource2 = new DruidDataSource();
+                dataSource.setUrl("jdbc:log4jdbc:mysql://localhost:3306/cloudDB01");
+                dataSource.setUsername("root");
+                dataSource.setPassword("");
+                dataSource.setDriverClassName("net.sf.log4jdbc.DriverSpy");
+                map.put("cloudDB01", dataSource);
 
         return map;
 
@@ -123,26 +112,10 @@ public  class DataSourceConfig {
 
 
 
-    /*
-
-     * Mapper 文件位置。
-
-     */
-
-    //protected  abstract String getMapperLocation();
-
-    protected  String getMapperLocation(){
-
-        return "classpath*:mapping/*.xml";
-
-    }
-
 
 
     @Bean
-
     public DynamicDataSource dynamicDataSource() {
-
         DynamicDataSource dynamicDataSource = DynamicDataSource.getInstance();
 
 
@@ -158,9 +131,7 @@ public  class DataSourceConfig {
         DataSource ds = getDefaultDataSource();
 
         if (ds != null) {
-
             dynamicDataSource.setDefaultTargetDataSource( ds );
-
         }
 
         return dynamicDataSource;
@@ -170,10 +141,7 @@ public  class DataSourceConfig {
 
 
     @Bean(name = "sqlSessionTemplate")
-
-    public SqlSessionTemplate sqlSessionTemplate(
-
-            @Qualifier("sqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
+    public SqlSessionTemplate sqlSessionTemplate(@Qualifier("sqlSessionFactory") SqlSessionFactory sqlSessionFactory) {
 
         return new SqlSessionTemplate(sqlSessionFactory);
 
@@ -181,26 +149,31 @@ public  class DataSourceConfig {
 
 
 
+//    @Bean
+//    public SqlSessionFactory sqlSessionFactory(@Qualifier("dynamicDataSource") DataSource dynamicDataSource) throws Exception {
+//
+//        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
+//
+//        bean.setDataSource(dynamicDataSource);
+//
+//        bean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources( getMapperLocation() ));
+//
+//        return bean.getObject();
+//
+//    }
     @Bean
+    public SqlSessionFactory pSqlSessionFactoryBean(@Qualifier("dynamicDataSource") DataSource dynamicDataSource) throws Exception {
 
-    public SqlSessionFactory sqlSessionFactory(
+        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
+        sqlSessionFactoryBean.setDataSource(dynamicDataSource);
 
-            @Qualifier("dynamicDataSource") DataSource dynamicDataSource)
+        org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
+        configuration.setMapUnderscoreToCamelCase(true);
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
 
-            throws Exception {
-
-        SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
-
-        bean.setDataSource(dynamicDataSource);
-
-        bean.setMapperLocations(new PathMatchingResourcePatternResolver()
-
-                .getResources( getMapperLocation() ));
-
-        return bean.getObject();
-
-
-
+        sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:/mybatis/psql/**/*.xml"));
+        sqlSessionFactoryBean.setConfiguration(configuration);
+        return sqlSessionFactoryBean.getObject();
     }
 
 }
