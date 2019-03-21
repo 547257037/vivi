@@ -1,5 +1,7 @@
 package com.tiantian.psqlTest;
 
+import java.util.concurrent.ArrayBlockingQueue;
+
 public class test01 {
     public static void main(String[] args){
 //        Date date = new Date();
@@ -24,5 +26,9 @@ public class test01 {
 //        System.out.println(tempArray[4]);
 //        System.out.println(tempArray[5]);
  System.out.println("123");
+
+        ArrayBlockingQueue fairQueue = new ArrayBlockingQueue(1000,true);
     }
 }
+
+

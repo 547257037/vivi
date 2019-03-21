@@ -28,10 +28,14 @@ public class DictionariesController {
     @Autowired
    private IDictionariesService dictionariesService;
     @GetMapping("getDictionariesHeroList")
-    public ResponseResult getAllDictionariesHeroList(){
-        Map<Integer, List<Hero>> collect = dictionariesService.getAllDictionariesHeroList().stream().collect(groupingBy(x -> x.getHeroType(), mapping(x -> x, toList())));
-        collect.values().stream().forEach(x->x.stream().sorted(Comparator.comparing(Hero::getHeroLv).reversed()));
-        return ResponseResult.putSuccessData(collect);
+    public ResponseResult getAllDictionariesHeroList(Hero hero){
+
+        Map<Integer, List<Hero>> collect = dictionariesService.getAllDictionariesHeroList(hero).stream().collect(groupingBy(x -> x.getHeroType(), mapping(x -> x, toList())));
+//        collect.values().forEach(x->x.stream().sorted(Comparator.comparing(Hero::getHeroLv).reversed()).collect(toList()));
+        List<Hero> collect2 = dictionariesService.getAllDictionariesHeroList(hero);
+        collect2.sort((o1,o2 )->o1.getHeroLv()-o2.getHeroLv());
+
+        return ResponseResult.putSuccessData(collect2);
     }
 
     @ResponseBody

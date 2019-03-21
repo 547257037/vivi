@@ -5,7 +5,7 @@ import com.tiantian.api.dictionaries.dictionariesEntity.Hero;
 import java.util.List;
 
 public interface IDictionariesHeroDao {
-    List<Hero> getAllDictionariesHeroList();
+    List<Hero> getAllDictionariesHeroList(Hero hero);
 
     void sveDictionariesHero(Hero hero);
 

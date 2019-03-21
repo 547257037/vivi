@@ -5,8 +5,10 @@
 
 <mapper namespace="com.tiantian.mapper.psql.IDictionariesHeroDaoMapper">
 
-    <select id="queryStarvChannelGroup"  resultType="com.tiantian.api.dictionaries.dictionariesEntity.Hero">
-        select * FROM hero3
-
+    <select id="getAllDictionariesHeroList"  resultType="com.tiantian.api.dictionaries.dictionariesEntity.Hero" parameterType="com.tiantian.api.dictionaries.dictionariesEntity.Hero">
+        select * FROM hero
+        <if test="heroName != null">
+              where hero_name like concat('%',#{heroName},'%')
+         </if>
     </select>
 </mapper>
