@@ -15,6 +15,17 @@ import org.springframework.stereotype.Repository;
 public class AopTest {
    @Before("execution(* com.tiantian.api.dictionaries.dictionariesDao.impl..*.*(..))")
    public void testBefore(JoinPoint point){
+
+       //第一步查询数据库，放到redis的datasource
+
+       boolean tag =true;
+       if (tag){
+
+           DataSourceContextHolder.setKey("test1");
+           tag=false;
+       }else {
+           DataSourceContextHolder.setKey("test2");
+       }
        //获得当前访问的class
        Class<?> className = point.getTarget().getClass();
        System.out.println("className==================================>"+className);
