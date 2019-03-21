@@ -28,7 +28,7 @@ import javax.sql.DataSource;
 @MapperScan(basePackages = "com.tiantian.mapper.psql", sqlSessionTemplateRef = "pSqlSessionTemplate")
 public class PSqlDataSourceConfig {
     /**
-     * 配置psql数据源
+     * 配置psql数据
      */
     /*
     * @Primary：在众多相同的bean中，优先选择用@Primary注解的bean（该注解加在各个bean上）
