@@ -24,8 +24,8 @@ import javax.sql.DataSource;
  * @author zyx
  * @date 2018/3/27.
  */
-@Configuration
-@MapperScan(basePackages = "com.tiantian.mapper.psql", sqlSessionTemplateRef = "pSqlSessionTemplate")
+//@Configuration
+//@MapperScan(basePackages = "com.tiantian.mapper.psql", sqlSessionTemplateRef = "pSqlSessionTemplate")
 public class PSqlDataSourceConfig {
     /**
      * 配置psql数据
@@ -34,9 +34,9 @@ public class PSqlDataSourceConfig {
     * @Primary：在众多相同的bean中，优先选择用@Primary注解的bean（该注解加在各个bean上）
 @Qualifier：在众多相同的bean中，@Qualifier指定需要注入的bean（该注解跟随在@Autowired后）
     * */
-    @Bean
-    @Primary
-    @ConfigurationProperties( "spring.pg")
+//    @Bean
+//    @Primary
+//    @ConfigurationProperties( "spring.pg")
     public HikariConfig pSqlDataSourceProperties() {
         return new HikariConfig();
     }
@@ -48,24 +48,24 @@ public class PSqlDataSourceConfig {
     }
 
 
-    @Primary
-    @Bean(name = "pSql")
+//    @Primary
+//    @Bean(name = "pSql")
     public JdbcTemplate pSqlJdbcTemplate() {
         return new JdbcTemplate(pSqlDataSource());
     }
 
-    @Primary
-    @Bean(name = "pSqlName")
+//    @Primary
+//    @Bean(name = "pSqlName")
     public NamedParameterJdbcTemplate mysqlNamedParameterJdbcTemplate() {
         return new NamedParameterJdbcTemplate(pSqlJdbcTemplate());
     }
 
-    @Bean
+//    @Bean
     public Jdbc jdbc(){
         return new Jdbc(pSqlDataSource());
     }
 
-    @Bean(name = "pSqlSessionFactoryBean")
+//    @Bean(name = "pSqlSessionFactoryBean")
     public SqlSessionFactory pSqlSessionFactoryBean() throws Exception {
 
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
@@ -80,14 +80,14 @@ public class PSqlDataSourceConfig {
         return sqlSessionFactoryBean.getObject();
     }
 
-    @Bean(name = "pSqlSessionTemplate")
+//    @Bean(name = "pSqlSessionTemplate")
     public SqlSessionTemplate pSqlSessionTemplate(@Qualifier("pSqlSessionFactoryBean") SqlSessionFactory
                                                             sqlSessionFactory)
             throws Exception {
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 
-    @Bean
+//    @Bean
     public PlatformTransactionManager transactionManager() {
         return new DataSourceTransactionManager(pSqlDataSource());
     }
