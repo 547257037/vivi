@@ -40,20 +40,20 @@ public class PSqlDataSourceConfig {
     public HikariConfig pSqlDataSourceProperties() {
         return new HikariConfig();
     }
-
-    @Bean
-    @Primary
+//
+//    @Bean
+//    @Primary
     public DataSource pSqlDataSource() {
         return new HikariDataSource(pSqlDataSourceProperties());
     }
 
-
+//
 //    @Primary
 //    @Bean(name = "pSql")
     public JdbcTemplate pSqlJdbcTemplate() {
         return new JdbcTemplate(pSqlDataSource());
     }
-
+//
 //    @Primary
 //    @Bean(name = "pSqlName")
     public NamedParameterJdbcTemplate mysqlNamedParameterJdbcTemplate() {
@@ -88,7 +88,7 @@ public class PSqlDataSourceConfig {
     }
 
 //    @Bean
-    public PlatformTransactionManager transactionManager() {
-        return new DataSourceTransactionManager(pSqlDataSource());
-    }
+//    public PlatformTransactionManager transactionManager() {
+//        return new DataSourceTransactionManager(pSqlDataSource());
+//    }
 }
