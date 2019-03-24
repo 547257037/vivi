@@ -70,3 +70,29 @@ create table order_detail
   product_quantity      bigint    default 0      ,
   product_icon    bigint
 );
+
+
+1.后台类目表
+
+gx_back_category  //后台类目表
+
+(
+  back_category_id     varchar(255)                                      not null,     // 类目id
+  back_category_parend_id    varchar(255)                                         not null, // 类目
+  back_category_name     varchar(255), //类目名称
+  product_name      varchar(255),
+  product_price  numeric         not null,
+  product_quantity      bigint    default 0      ,
+  product_icon    bigint
+);
+
+2. 模板表(设备，仪器，试剂，耗材)
+   1、  模板表，需要和商品类目关联
+
+3.   规格参数数据表
+
+  2、  规格参数数据表，需要和商品关联
+
+在数据库中规格参数模板和具体的规格参数数据都是以json格式的字符串保存，而不是分字段保存
+
+4.库存表同
